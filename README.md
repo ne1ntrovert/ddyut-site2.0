@@ -7,3 +7,4 @@ css/
 js/
 
 Запуск: откройте index.html в браузере.
+Или перейдите по ссылке: https://ne1ntrovert.github.io/ddyut-site2.0/
