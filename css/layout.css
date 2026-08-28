@@ -1,0 +1,381 @@
+.topbar {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 18px 28px;
+  background: linear-gradient(180deg, rgba(8, 10, 13, .9), rgba(8, 10, 13, .15));
+  backdrop-filter: blur(10px)
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-width: 250px
+}
+
+.brand-mark {
+  font-weight: 900;
+  letter-spacing: -.08em;
+  font-size: 22px
+}
+
+.brand-sub {
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: .12em
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  font-size: 12px;
+  color: #d4d7dd;
+  flex: 1;
+  justify-content: center
+}
+
+.nav a {
+  transition: .2s
+}
+
+.nav a:hover {
+  color: var(--cyan)
+}
+
+.nav-cta {
+  font-size: 12px;
+  border: 1px solid var(--line);
+  padding: 10px 14px;
+  border-radius: 99px
+}
+
+.nav-cta span {
+  color: var(--cyan)
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 120px 6vw 46px
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(90deg, rgba(5, 7, 9, .88), rgba(5, 7, 9, .35) 48%, rgba(5, 7, 9, .22)), url('../assets/future.png');
+  background-size: cover;
+  background-position: center
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, .035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .035) 1px, transparent 1px);
+  background-size: 90px 90px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent 75%)
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 880px
+}
+
+.eyebrow,
+.section-label {
+  font-size: 11px;
+  letter-spacing: .16em;
+  color: var(--cyan);
+  font-weight: 700;
+  text-transform: uppercase
+}
+
+.hero h1 {
+  font-size: clamp(58px, 8vw, 128px);
+  line-height: .88;
+  letter-spacing: -.07em;
+  margin: 24px 0 34px;
+  font-weight: 900
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--cyan)
+}
+
+.hero-lead {
+  font-size: clamp(16px, 1.5vw, 21px);
+  max-width: 650px;
+  color: #d5d8df
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+  flex-wrap: wrap
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 13px;
+  transition: .2s
+}
+
+.button-bright {
+  background: var(--lime);
+  color: #090b0e
+}
+
+.button-bright:hover {
+  transform: translateY(-2px)
+}
+
+.button-ghost {
+  border: 1px solid rgba(255, 255, 255, .25);
+  background: rgba(0, 0, 0, .15)
+}
+
+.button-ghost:hover {
+  border-color: var(--cyan);
+  color: var(--cyan)
+}
+
+.hero-side {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  z-index: 2;
+  writing-mode: vertical-rl;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #aeb3bd;
+  font-size: 9px;
+  letter-spacing: .16em
+}
+
+.side-arrow {
+  color: var(--cyan);
+  font-size: 18px
+}
+
+.hero-bottom {
+  position: absolute;
+  z-index: 2;
+  right: 6vw;
+  bottom: 42px;
+  display: flex;
+  gap: 42px
+}
+
+.hero-bottom div {
+  display: flex;
+  flex-direction: column
+}
+
+.hero-bottom strong {
+  font-size: 24px;
+  letter-spacing: -.05em
+}
+
+.hero-bottom span {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 2px
+}
+
+.section {
+  max-width: var(--max);
+  margin: auto;
+  padding: 130px 40px
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 50px
+}
+
+.display {
+  font-size: clamp(42px, 6vw, 86px);
+  line-height: .94;
+  letter-spacing: -.065em;
+  font-weight: 800;
+  margin: 0 0 36px
+}
+
+.display span,
+.section h2 span,
+.history h2 span,
+.education h2 span,
+.roadmap h2 span,
+.closing h2 span {
+  color: var(--cyan)
+}
+
+.body-large {
+  max-width: 700px;
+  color: var(--muted);
+  font-size: 18px
+}
+
+.section-head,
+.arch-intro,
+.history-head,
+.education-head,
+.roadmap-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: end
+}
+
+.section-head p,
+.arch-intro p,
+.history-head p,
+.education-head p,
+.roadmap-head p {
+  color: var(--muted);
+  max-width: 520px;
+  margin: 0 0 5px
+}
+
+h2 {
+  font-size: clamp(50px, 6vw, 90px);
+  line-height: .9;
+  letter-spacing: -.065em;
+  margin: 18px 0 0;
+  font-weight: 850
+}
+
+.compare {
+  height: min(68vw, 720px);
+  position: relative;
+  margin-top: 55px;
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid var(--line);
+  background: #111
+}
+
+.compare>img,
+.compare-before img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.compare>img {
+  object-position: center
+}
+
+.compare-before {
+  position: absolute;
+  inset: 0;
+  width: 50%;
+  overflow: hidden;
+  z-index: 2
+}
+
+.compare-before img {
+  width: 100%;
+  max-width: none;
+  object-position: center
+}
+
+.compare-line {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, .5)
+}
+
+.compare-line span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: #0a0d11
+}
+
+.compare-line span:before,
+.compare-line span:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 8px;
+  height: 2px;
+  background: #fff
+}
+
+.compare-line span:before {
+  left: 9px
+}
+
+.compare-line span:after {
+  right: 9px
+}
+
+.compare-range {
+  position: absolute;
+  z-index: 10;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize
+}
+
+.compare-label {
+  position: absolute;
+  z-index: 6;
+  top: 20px;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 99px;
+  background: rgba(0, 0, 0, .4);
+  font-size: 9px;
+  letter-spacing: .12em
+}
+
+.before-label {
+  left: 20px
+}
+
+.after-label {
+  right: 20px
+}
+
+.compare-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 14px
+}

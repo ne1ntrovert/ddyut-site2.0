@@ -1,0 +1,222 @@
+@media(max-width:900px) {
+  .nav {
+    display: none
+  }
+
+  .topbar {
+    justify-content: space-between
+  }
+
+  .brand {
+    min-width: 0
+  }
+
+  .nav-cta {
+    display: block
+  }
+
+  .hero {
+    padding: 110px 24px 30px;
+    min-height: 92vh
+  }
+
+  .hero h1 {
+    font-size: 58px
+  }
+
+  .hero-bottom {
+    left: 24px;
+    right: 24px;
+    justify-content: space-between;
+    gap: 10px
+  }
+
+  .hero-bottom strong {
+    font-size: 18px
+  }
+
+  .hero-bottom span {
+    font-size: 8px
+  }
+
+  .hero-side {
+    display: none
+  }
+
+  .section {
+    padding: 90px 20px
+  }
+
+  .intro,
+  .section-head,
+  .arch-intro,
+  .history-head,
+  .education-head,
+  .roadmap-head {
+    grid-template-columns: 1fr;
+    gap: 22px
+  }
+
+  .intro {
+    display: block
+  }
+
+  .intro .section-label {
+    margin-bottom: 35px
+  }
+
+  .number-grid,
+  .edu-grid,
+  .city-points {
+    grid-template-columns: 1fr 1fr
+  }
+
+  .number-card {
+    min-height: 220px
+  }
+
+  .arch-gallery {
+    grid-template-columns: 1fr
+  }
+
+  .arch-gallery .gallery-large img {
+    min-height: auto;
+    height: auto
+  }
+
+  .feature {
+    grid-template-columns: 55px 1fr
+  }
+
+  .roadmap-grid {
+    grid-template-columns: 1fr
+  }
+
+  .roadmap-grid article {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    min-height: 0
+  }
+
+  .roadmap-grid article:last-child {
+    border-bottom: 0
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr
+  }
+
+  .footer-note {
+    grid-column: 1/-1
+  }
+}
+
+@media(max-width:600px) {
+  .topbar {
+    padding: 15px 16px
+  }
+
+  .brand-sub {
+    display: none
+  }
+
+  .nav-cta {
+    font-size: 10px;
+    padding: 9px 11px
+  }
+
+  .hero {
+    padding-left: 18px;
+    padding-right: 18px
+  }
+
+  .hero h1 {
+    font-size: 49px
+  }
+
+  .hero-lead {
+    font-size: 15px
+  }
+
+  .hero-bottom {
+    bottom: 20px
+  }
+
+  .number-grid,
+  .edu-grid,
+  .city-points {
+    grid-template-columns: 1fr
+  }
+
+  .number-card {
+    min-height: 190px
+  }
+
+  .compare {
+    height: 75vh;
+    min-height: 450px;
+    border-radius: 18px
+  }
+
+  .compare-caption {
+    flex-direction: column
+  }
+
+  .full-image {
+    height: 70vh;
+    min-height: 480px
+  }
+
+  .timeline:before {
+    left: 74px
+  }
+
+  .timeline-item {
+    grid-template-columns: 55px 38px 1fr;
+    gap: 12px
+  }
+
+  .timeline-copy h3 {
+    font-size: 20px
+  }
+
+  .open-city-card {
+    padding: 30px 22px
+  }
+
+  .city-points {
+    margin-top: 45px
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 28px 20px
+  }
+}
+
+@media(max-width:760px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 28px 22px
+  }
+
+  .footer-team {
+    grid-column: 1;
+    border-left: 0;
+    padding-left: 0;
+    grid-template-columns: 1fr;
+    gap: 18px
+  }
+
+  .footer-team-title {
+    grid-column: 1
+  }
+
+  .footer-links {
+    grid-column: 1
+  }
+
+  .footer-note {
+    grid-column: 1
+  }
+}
